@@ -9,13 +9,14 @@
   --button-background-blue: #2196f3;
 }
 
-* ::after, ::before {
+*::after,
+::before {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--main-background-color-white);
@@ -27,13 +28,16 @@ body {
   color: var(--secondary-color-grey);
 }
 
-h1, h2, h3 {
-  padding: 0;
-  margin: 0;
-}
-
 ul {
   list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
   padding: 0;
 }
 
@@ -108,23 +112,32 @@ nav {
   color: var(--secondary-color-grey);
   text-decoration: none;
   font-weight: 500;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: #757575;
 }
 
-.list-adress a:hover, .list-adress a:focus {
+.list-adress a:hover,
+.list-adress a:focus {
   color: #2196f3;
 }
 /* adress END */
 
 /* Main */
 /* Hero */
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
 .hero {
-  background-color: var(--third-background-color-dark);
-  padding: 200px 452px 200px;
-  margin-bottom: 94px;
+  background: url(../images/hero-Img.jpg) no-repeat;
+  background-size: cover;
+  /* background-color: var(--third-background-color-dark); */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
 }
 
 .hero-title {
@@ -132,9 +145,12 @@ nav {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 }
 
@@ -163,9 +179,25 @@ nav {
 }
 
 /* feature */
+.feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .feature-list {
-  max-width: 1170px;
+  margin-bottom: 94px;
   display: flex;
+  gap: 30px;
+}
+
+.feature-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background-color-grey);
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -184,9 +216,11 @@ nav {
 .feature-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 
   color: var(--third-color-dark);
 }
@@ -253,7 +287,7 @@ footer {
   color: var(--forth-color-blue);
 }
 
-footer>.logo-a {
+footer > .logo-a {
   color: var(--main-color-white);
 }
 /* Footer END */
