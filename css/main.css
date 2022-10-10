@@ -58,7 +58,7 @@ nav {
 .logo-a {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
-  line-height: 1.19px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--third-color-dark);
@@ -185,7 +185,6 @@ nav {
 }
 
 .feature-list {
-  margin-bottom: 94px;
   display: flex;
   gap: 30px;
 }
@@ -201,7 +200,7 @@ nav {
 }
 
 .visually-hidden {
-  position: absolute;
+  stion: absolute;
   white-space: nowrap;
   width: 1px;
   height: 1px;
@@ -225,7 +224,12 @@ nav {
   color: var(--third-color-dark);
 }
 
+/* Work */
 /* заголовок H2 */
+.work {
+  padding-bottom: 94px;
+}
+
 .second-title {
   font-weight: 700;
   font-size: 36px;
@@ -233,11 +237,65 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-bottom: 50px;
+
   color: var(--third-color-dark);
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-list-item {
+  width: 270px;
+  height: 428px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-title {
+  margin-bottom: 10px;
+}
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+
+.social-container {
+  width: 206px;
+  margin: 0 auto;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social:hover {
+  border-radius: 50%;
+  background-color: var(--forth-color-blue);
+  cursor: pointer;
 }
 
 .our-team {
   background-color: var(--secondary-background-color-grey);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team h3 {
@@ -260,13 +318,37 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-bottom: 16px;
+
   color: var(--secondary-color-grey);
+}
+/* comanda END */
+
+/* client */
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
 }
 /* Main END */
 
 /* Footer */
 footer {
   background-color: var(--third-background-color-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  color: var(--main-color-white);
 }
 
 .adress-list {
@@ -287,8 +369,82 @@ footer {
   color: var(--forth-color-blue);
 }
 
-footer > .logo-a {
-  color: var(--main-color-white);
+footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.footer-social {
+  margin-right: 93px;
+}
+
+footer p {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img:hover {
+  background-color: var(--button-background-blue);
+  cursor: pointer;
+}
+
+.subscribe-box {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  position: relative;
+}
+
+.footer-subscribe input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  background-color: var(--third-background-color-dark);
+}
+
+.footer-subscribe label {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer button {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
 }
 /* Footer END */
 
