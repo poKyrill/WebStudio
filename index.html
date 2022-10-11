@@ -130,13 +130,16 @@
           <h2 class="second-title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li>
-              <a href=""
-                ><img
-                  src="./images/box1.jpg"
-                  alt="людина набирає код"
-                  width="370"
-                  height="294"
-              /></a>
+              <div class="work-item">
+                <a href="">
+                  <img
+                    src="./images/box1.jpg"
+                    alt="людина набирає код"
+                    width="370"
+                    height="294"/>
+                  </a>
+                <h3>Десктопні додатки</h3>
+              </div>
             </li>
             <li>
               <a href=""
@@ -146,6 +149,7 @@
                   width="370"
                   height="294"
               /></a>
+              <h3>Мобільні додатки</h3>
             </li>
             <li>
               <a href=""
@@ -155,6 +159,7 @@
                   width="370"
                   height="294"
               /></a>
+              <h3>Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -651,15 +656,15 @@
           <p>Підпишіться на розсилку</p>
           <form action="" method="get" name="email">
             <div class="subscribe-box">
-              <input
-                type="email"
-                placeholder="  "
-                required
-                name="email"
-                id="email"
-              />
-              <label for="email">E-mail</label>
-              <button>Підписатися</button>
+              <input type="email" placeholder="E-mail" required />
+              <button>
+                Підписатися
+                <img
+                  src="./images/icon_send.svg"
+                  alt="icon_send"
+                  class="icon_send"
+                />
+              </button>
             </div>
           </form>
         </div>
